@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void print_array(int array[], int len) {
+  printf("Array: ");
+    for(int i = 0; i<len; i++){
+      printf("%d, ",array[i]);
+    }
+}
+
+int min (int array[], int len){
+  int minimum = array[0];
+  for(int i=1;i<len;i++){
+    if (minimum>array[i]){
+      minimum = array[i];
+    }
+  }
+  return minimum;
+}
+
+int max (int array[], int len){
+  int maximum = array[0];
+  for(int i=0;i<len;i++){
+    if (maximum<array[i]){
+      maximum = array[i];
+    }
+  }
+  return maximum;
+}
+
+int sum(int array[], int len,int point){
+  int summe = array[point];
+  for(int i=point+1; i<len; i++){
+    summe += array[i];
+  }
+  return summe;
+}
+
+int main() {
+    int array[] = {9, 4, 7, 8, 10, 5, 1, 6, 3, 2};
+    int len = 10;
+    print_array(array,len);
+    printf("\nMinimum: %d\nMaximum: %d\nSumme: %d",min(array,len),max(array,len),sum(array,len,0));
+}

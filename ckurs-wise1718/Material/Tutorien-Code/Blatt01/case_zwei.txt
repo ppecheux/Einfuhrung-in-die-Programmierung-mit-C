@@ -1,0 +1,4 @@
+case_zwei.c: In function 'main':
+case_zwei.c:5:5: error: expected ';' before 'return'
+     return 0;
+     ^

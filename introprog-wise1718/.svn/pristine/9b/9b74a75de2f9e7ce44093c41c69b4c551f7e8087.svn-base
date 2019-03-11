@@ -1,0 +1,6 @@
+case_eins.c: In function 'main':
+case_eins.c:2:5: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+     printf("Hallo Welt!\n");
+     ^
+case_eins.c:2:5: warning: incompatible implicit declaration of built-in function 'printf'
+case_eins.c:2:5: note: include '<stdio.h>' or provide a declaration of 'printf'

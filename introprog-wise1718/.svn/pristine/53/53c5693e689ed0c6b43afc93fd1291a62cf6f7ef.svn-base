@@ -1,0 +1,11 @@
+case_drei.c: In function 'main':
+case_drei.c:4:5: error: expected declaration specifiers before 'printf'
+     printf("Hallo Welt!\n");
+     ^
+case_drei.c:5:5: error: expected declaration specifiers before 'return'
+     return 0;
+     ^
+case_drei.c:6:1: error: expected declaration specifiers before '}' token
+ }
+ ^
+case_drei.c:6:1: error: expected '{' at end of input
